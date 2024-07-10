@@ -4,11 +4,20 @@ import App from './App.jsx'
 import './index.css'
 import NavBar from './Components/NavBar/NavBar.jsx'
 import Hero from './Components/Hero/Hero.jsx'
+import Projectos from './Components/Projectos/Projectos.jsx'
+import QueHago from './Components/QueHago/QueHago.jsx'
+import Formulario from './Components/Formulario/Formulario.jsx'
+import Footer from './Components/Footer/Footer.jsx'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <NavBar/>
     <Hero/>
-    <App />
+    <Projectos/>
+    <QueHago/>
+    <Formulario/>
+    <Footer/>
+    <App/>
   </React.StrictMode>,
 )

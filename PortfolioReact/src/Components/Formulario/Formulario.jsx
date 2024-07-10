@@ -1,6 +1,6 @@
 import React from 'react';
-import './Projectos.css'
-const Projectos = () =>{
+import './Formulario.css'
+const Formulario = () =>{
     return(
         <div>
             <p>Hola mundo</p>
@@ -8,4 +8,4 @@ const Projectos = () =>{
     )
 }
 
-export default Projectos 
+export default Formulario 
