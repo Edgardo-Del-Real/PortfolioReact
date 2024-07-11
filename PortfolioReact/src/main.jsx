@@ -8,17 +8,15 @@ import Projectos from './Components/Projectos/Projectos.jsx'
 import QueHago from './Components/QueHago/QueHago.jsx'
 import Formulario from './Components/Formulario/Formulario.jsx'
 import Footer from './Components/Footer/Footer.jsx'
+import { ChakraProvider } from '@chakra-ui/react'
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <NavBar/>
-    <Hero/>
-    <Projectos/>
-    <QueHago/>
-    <Formulario/>
-    <Footer/>
-    <App/>
+    <ChakraProvider>
+      <NavBar/>
+      <App/>
+    </ChakraProvider>
   </React.StrictMode>,
 )
