@@ -17,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ChakraProvider>
       <NavBar/>
       <Hero/>
+      <Projectos/>
       <App/>
     </ChakraProvider>
   </React.StrictMode>,
