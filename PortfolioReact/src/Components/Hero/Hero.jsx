@@ -2,6 +2,8 @@ import React from 'react';
 import './Hero.css'
 import { Box, Button, ButtonGroup, Center, Flex, Spacer } from '@chakra-ui/react'
 import foto_mia from '../../assets/foto_mia.png'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+
 const Hero = () =>{
     return(
     <Box as='section' className="contenedor-hero" fontWeight='bold' pl={30} pr={30}>
@@ -23,11 +25,11 @@ const Hero = () =>{
 
         <ButtonGroup className="contenedor-linea-redes">
             <div className="linea"></div>
-            <Flex className="redes">
+            <Flex className="redes"> 
                 <a href="https://www.instagram.com/edgardelreal1/" title="Instagram" target="_blank"><i className="bi bi-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/edgardo-del-real-27b24a27a/" title="LinkedIn" target="_blank"><i className="bi bi-linkedin"></i></a>
                 <a href="https://github.com/Edgardo-Del-Real" title="GitHub" target="_blank"><i className="bi bi-github"></i></a>
-            </Flex>
+            </Flex> 
         </ButtonGroup>
     </Box>
     )
