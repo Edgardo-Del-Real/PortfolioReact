@@ -1,10 +1,10 @@
 import React from 'react';
 import './Projectos.css'
-import {Box, Center} from '@chakra-ui/react'
+import {Box, Center, Flex} from '@chakra-ui/react'
 import contrato from '../../assets/contrato.png'
 const Projectos = () =>{
     return(
-        <Box id="proyectos" className="contenedor-proyectos">
+        <Box id="proyectos" className="contenedor-proyectos" mt={130}>
 
                <Center>      
                 <h2><span className="signos">&lt;</span>Mis proyectos<span 
@@ -13,10 +13,10 @@ const Projectos = () =>{
                 <Center className="contenedor-imagenes">
                     <Box as='div'><a href="https://ahdocdigitalsolutions.com/" target="_blank"><img src={contrato} class="imagen-ahdoc" alt=""/></a></Box>
                 </Center>
-                <Center className="contenedor-ver-mas">
+                <Flex className="contenedor-ver-mas" aling-items='center'               justifyContent='Center'>
                     <a className="boton-ver-todos" href="">Ver todos</a>
-                </Center>
-            </Box>  
+                </Flex>
+        </Box>  
     )
 }
 

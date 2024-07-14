@@ -11,7 +11,7 @@ const Hero = () =>{
         <Flex w='100%' className="contenedor-foto-texto" mt={20}>
             <Center className=  "hi">
                 <h1>Hola,<br/>Soy Edgardo,<br/><span>Desarrollador web</span></h1>
-                <p>Front End Developer / C# / Java / React</p>
+                <p className='textoDeAbajo'>Front End Developer / C# / Java / React</p>
             </Center>
             <Spacer/>
             <Center className="imagen-mia" mr={20}>

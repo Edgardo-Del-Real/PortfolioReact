@@ -9,6 +9,7 @@ import QueHago from './Components/QueHago/QueHago.jsx'
 import Formulario from './Components/Formulario/Formulario.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import { ChakraProvider } from '@chakra-ui/react'
+import AboutMe from './Components/AboutMe/AboutMe.jsx'
 
 
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <NavBar/>
       <Hero/>
       <Projectos/>
+      <AboutMe/>
       <App/>
     </ChakraProvider>
   </React.StrictMode>,
