@@ -13,6 +13,7 @@ import AboutMe from './Components/AboutMe/AboutMe.jsx'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider>
@@ -21,6 +22,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Projectos/>
       <AboutMe/>
       <QueHago/>
+      <Formulario/>
+      <Footer/>
       <App/>
     </ChakraProvider>
   </React.StrictMode>,
