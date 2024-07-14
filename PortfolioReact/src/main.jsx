@@ -20,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Hero/>
       <Projectos/>
       <AboutMe/>
+      <QueHago/>
       <App/>
     </ChakraProvider>
   </React.StrictMode>,
