@@ -8,13 +8,13 @@ const QueHago = () =>{
         <Box className="que-hago">
                 <Flex justifyContent='center' alignItems='center' flexWrap='wrap'>
                 <h2><span className="signos">&lt;</span>¿Que hago?<span className="signos">&gt;</span></h2>
-                <Box as='section' className="card-desarrollo-web">
+                <Box as='section' className="card-desarrollo-web" boxShadow='1px 1px 15px rgba(0.5, 0.5, 0.5, 0.5)' borderRadius='20px' w={{base:'250px', md:'350px', lg: '450px' }}>
                     <Box as='section' className="contenedor-card1">
                         <img src={pic1} alt=""/>
                         <h2 className="titulo-card">Desarrollo Web</h2>
                     </Box>
                 </Box>
-                <Box as='section' className="card-desarrollo-software">
+                <Box as='section' className="card-desarrollo-software" boxShadow='1px 1px 15px rgba(0.5, 0.5, 0.5, 0.5)' borderRadius='20px' w={{base:'250px', md:'350px', lg: '450px' }}>
                     <Box as='section' className="contenedor-card2">
                         <img src={pic2} alt=""/>
                         <h2 className="titulo-card">Desarrollo Softaware</h2>

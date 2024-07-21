@@ -13,15 +13,13 @@
 }
 
 .card-desarrollo-web, .card-desarrollo-software{
-    /* border: solid; */
+    border: solid;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
     height: 350px;
     width: 450px;
     margin: 15px;
-    box-shadow: 1px 1px 15px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 .contenedor-card2, .contenedor-card1{

@@ -87,7 +87,6 @@
 
 .copy{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-titulos);
-    display: flex;
+    color: var(--color-titulos);git
     padding: 0 45px;
 }
