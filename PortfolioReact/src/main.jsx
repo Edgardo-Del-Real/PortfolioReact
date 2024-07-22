@@ -17,12 +17,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider>
       <NavBar/>
-      {/* <Hero/> */}
-      {/* <Projectos/> */}
-      {/* <AboutMe/>
+      <Hero/>
+      <Projectos/>
+      <AboutMe/>
       <QueHago/>
       <Formulario/>
-      <Footer/> */}
+      <Footer/>
     </ChakraProvider>
   </React.StrictMode>,
 )
