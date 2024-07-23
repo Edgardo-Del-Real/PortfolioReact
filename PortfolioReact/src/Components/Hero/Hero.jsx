@@ -4,7 +4,10 @@ import { Box, Button, ButtonGroup, Center, Flex, Spacer, Text, Image, Link, Icon
 import foto_mia from '../../assets/foto_mia.png'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
+
 const Hero = () =>{
+
+
     return(
     <Box as='section' className="contenedor-hero" fontWeight='bold' pl={30} pr={30} fontFamily='Arial'>
 
@@ -46,7 +49,7 @@ const Hero = () =>{
         height='90px' 
         transform='translateY(-90px)'>
 
-            <Button textAlign='center' 
+            <Button  textAlign='center' 
             border='4px solid' 
             width='50%'
             borderRadius='25px' 
@@ -60,6 +63,7 @@ const Hero = () =>{
             _hover={{color:'#bd93f9', bg:'#282a36'}}>
             Mis trabajos
             </Button>
+
 
             <Button textAlign='center' 
             border='4px solid' 

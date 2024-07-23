@@ -3,6 +3,11 @@ import './AboutMe.css'
 import foto2 from '../../assets/foto2.jpg'
 import { Box, Button, ButtonGroup, Center, Flex, Spacer, Image, Text, Link } from '@chakra-ui/react'
 const AboutMe = () =>{
+
+    let AbrirCV = () => {
+    window.open('https://drive.google.com/file/d/16vWlo4ecdnZQPmbKd7sMbbhSxpvx1n1J/view?usp=drive_link', '_blank');
+    }
+    
     return(
     <Box as='section' id="about-me" className="about-me" w='100%' mt='240px' fontFamily='Arial'>
         <Box as='section' className="contenedor-about-me" textAlign='center' p='20px'>
@@ -56,7 +61,7 @@ const AboutMe = () =>{
                                 </Text>
                                 <ButtonGroup className="contenedor-boton-cv" 
                                     mt='30px'>
-                                    <Button textAlign='center' 
+                                    <Button onClick={AbrirCV}  textAlign='center' 
                                             border='4px solid' 
                                             borderRadius='25px' 
                                             p='40px' 

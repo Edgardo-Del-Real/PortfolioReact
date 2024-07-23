@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projectos.css'
-import {Box, Center, Flex, Text, Link, Image, Button} from '@chakra-ui/react'
+import {Box, Center, Flex, Text, Link, Image, Button, Alert, AlertIcon} from '@chakra-ui/react'
 import contrato from '../../assets/contrato.png'
 const Projectos = () =>{
-    return(
-        <Box id="proyectos" className="contenedor-proyectos" mt='240px' fontFamily='Arial'>
 
+    let [mostrar, SetMostrar]=useState(false)
+
+    function MostrarAlert(){
+        SetMostrar(!mostrar)
+    }
+
+    return(
+        <Box  id="proyectos" className="contenedor-proyectos" mt='240px' fontFamily='Arial'>
                <Center>      
                 <Text as='h2' 
                 fontSize='40px' 
@@ -40,8 +46,8 @@ const Projectos = () =>{
                     aling-items='center'               
                     justifyContent='Center'
                     mt='80px'>
-                        <Center>
-                            <Button textAlign='center' 
+                            <Flex flexDirection='column' alignItems='center' justifyContent='center'>
+                            <Button onClick={MostrarAlert} textAlign='center' 
                                 border='4px solid' 
                                 borderRadius='25px' 
                                 p='40px' 
@@ -52,12 +58,17 @@ const Projectos = () =>{
                                 transition='1s' 
                                 cursor='pointer' 
                                 _hover={{color:'#bd93f9', bg:'#282a36', border:'4px solid'}}>
-                                Ver todos
+                                {mostrar ? 'Ocultar' : 'Ver'} Mensaje 
                             </Button>
-                        </Center>
+                            {mostrar && <Alert status='warning' variant='top-accent' mt='10px' borderRadius='md' >
+                                <AlertIcon/>
+                                Esto es todo de momento, estoy trabajando en mis proximos proyectos!!
+                            </Alert>}
+                            </Flex>
+                      
                 </Flex>
         </Box>  
     )
 }
 
-export default Projectos 
+export default Projectos
