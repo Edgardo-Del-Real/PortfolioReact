@@ -5,7 +5,7 @@ import logosinfondo from '../../assets/logosinfondo.png'
 import {Link as ScrollLink} from 'react-scroll'
 const Footer = () =>{
     return(
-        <Box>
+        <Box bg='#282a36'>
             <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Flex className="arriva-footer" justifyContent='end'>
                 <Link href="#arriva" className="arriva" mt='10px' mr='30px'><Box as='i' className="si bi-arrow-up-circle-fill" color='#625783' fontSize='40px' transition='0.5s' _hover={{color:'#bd93f9'}}></Box></Link>
             </Flex></ScrollLink>
@@ -22,7 +22,7 @@ const Footer = () =>{
                     <nav className="menu-footer">
                     <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link></ScrollLink>
                     <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link></ScrollLink>
-                        <Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>RESUME</Link>
+                    <ScrollLink to='proyectos' smooth={true} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PROYECTOS</Link></ScrollLink>
                         <ScrollLink to='aboutme' smooth={true} offset={-150} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>SOBRE MI</Link></ScrollLink>
                     </nav>
 

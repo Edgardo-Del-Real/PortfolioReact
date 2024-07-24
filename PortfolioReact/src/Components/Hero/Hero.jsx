@@ -12,7 +12,7 @@ const Hero = () =>{
 
     return(
     <Element name='hero'>
-    <Box as='section' className="contenedor-hero" fontWeight='bold' pl={30} pr={30} fontFamily='Arial'>
+    <Box as='section' className="contenedor-hero" fontWeight='bold' pl={30} pr={30} fontFamily='Arial' bg='#282a36'>
         <Flex w='100%' className="contenedor-foto-texto" mt={20}>
             
             <Center className="hi" 

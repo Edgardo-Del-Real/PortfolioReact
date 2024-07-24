@@ -5,10 +5,10 @@ import { Element } from 'react-scroll';
 const Formulario = () =>{
     return(
     <Element name='formulario'>
-    <Box as='form' id="formulario" className="contenedor-formulario" fontFamily='Arial' p='30px'>
+    <Box as='form' id="formulario" className="contenedor-formulario" fontFamily='Arial' p='30px' bg='#282a36'>
         <Flex justifyContent='center' flexWrap='wrap'>
             <Text as='h2' className="titulo" w='100%' textAlign='center' fontSize='40px' mb='100px' mt='250px' color='#f7f6fb'><span className="signos">&lt;</span>Contactos<span className="signos">&gt;</span></Text>
-                <Box as='section' className="formulario" p='20px' w='100%' borderRadius='25px' boxShadow='1px 1px 15px rgba(0.5, 0.5, 0.5, 0.5)' >
+                <Box as='section' className="formulario" p='20px' w='100%' borderRadius='25px' boxShadow='1px 1px 15px rgba(0.5, 0.5, 0.5, 0.5)' bg='#34394c' >
                     <Flex justifyContent='space-evenly' alignItems='center'    flexWrap='wrap'>
                         <Box as='section' className="contenedor-info" mb='250px' w='50%'>
                             <Flex alignItems='center' justifyContent='space-around'>

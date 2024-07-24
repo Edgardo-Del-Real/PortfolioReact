@@ -13,12 +13,12 @@ const Projectos = () =>{
 
     return(
         <Element name='proyectos'>
-        <Box  id="proyectos" className="contenedor-proyectos" mt='240px' fontFamily='Arial'>
+        <Box  id="proyectos" className="contenedor-proyectos" mt='240px' fontFamily='Arial' bg='#282a36'>
                <Center>      
                 <Text as='h2' 
                 fontSize='40px' 
                 color='#f7f6fb' 
-                mb='100px'>
+                mb='80px'>
                         <Text as='span' className="signos">
                             &lt;
                         </Text>

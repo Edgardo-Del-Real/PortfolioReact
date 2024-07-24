@@ -5,7 +5,7 @@ import logosinfondo from '../../assets/logosinfondo.png'
 import { Link as ScrollLink } from "react-scroll"
 const NavBar = () =>{
     return(
-    <Box as='header' w='100%' h='140px' pt='10px'>
+    <Box as='header' w='100%' h='140px' pt='10px' bg='#282a36'>
             <Flex>
                 <Center pl={30}>
                     <Image className='logo' src={logosinfondo} alt="" cursor='pointer' h='100px' w='100px'/>
@@ -20,7 +20,7 @@ const NavBar = () =>{
                     </ButtonGroup>
                 </Center>
                 <Box as='div' className="boton-desplegable">
-                    <Icon className="Li bi-list" display='none'></Icon>
+                    <Box as='Icon' className="Li bi-list" display='none'></Box>
                 </Box>
             </Flex>
     </Box>

@@ -5,7 +5,7 @@ import pic2 from '../../assets/pic2.png'
 import {Box, Center, Flex, Text, Image} from '@chakra-ui/react'
 const QueHago = () =>{
     return(
-        <Box className="que-hago" fontFamily='Arial' mt='240px' >
+        <Box className="que-hago" fontFamily='Arial' mt='240px' bg='#282a36'>
                 <Flex justifyContent='center' 
                     alignItems='center' 
                     flexWrap='wrap'>

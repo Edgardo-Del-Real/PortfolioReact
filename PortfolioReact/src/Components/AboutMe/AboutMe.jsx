@@ -11,7 +11,7 @@ const AboutMe = () =>{
     
     return(
     <Element name='aboutme'>
-    <Box as='section' id="about-me" className="about-me" w='100%' mt='240px' fontFamily='Arial'>
+    <Box as='section' id="about-me" className="about-me" w='100%' mt='240px' fontFamily='Arial' bg='#282a36'>
         <Box as='section' className="contenedor-about-me" textAlign='center' p='20px'>
             <Flex flexWrap='wrap' alignItems='center' justifyContent='space-evenly' >
                 <Box as='div' 
