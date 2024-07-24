@@ -94,7 +94,7 @@ const Hero = () =>{
             </ScrollLink>
         </ButtonGroup>
 
-        <ButtonGroup className="contenedor-linea-redes" fontSize='50px' transform='translate(-457px, 100px)'>
+        <ButtonGroup className="contenedor-linea-redes" transform='translate(-457px, 100px)'>
 
             <Flex justifyContent='center' 
             flexDirection='column' 
