@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.css'
 import {Box, Flex, Center, Spacer, Link, Image, Text, Icon} from '@chakra-ui/react'
 import logosinfondo from '../../assets/logosinfondo.png'
+import {Link as ScrollLink} from 'react-scroll'
 const Footer = () =>{
     return(
         <Box>
-            <Flex className="arriva-footer" justifyContent='end'>
+            <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Flex className="arriva-footer" justifyContent='end'>
                 <Link href="#arriva" className="arriva" mt='10px' mr='30px'><Box as='i' className="si bi-arrow-up-circle-fill" color='#625783' fontSize='40px' transition='0.5s' _hover={{color:'#bd93f9'}}></Box></Link>
-            </Flex>
+            </Flex></ScrollLink>
             <Box as='footer' className="footer" fontFamily='Arial' p='10px' >
             <Flex justifyContent='center' alignItems='center'>
                 <Box as='section' className="contenedor-footer" w='95%' borderBottom='#6b78a3 solid'>
@@ -19,10 +20,10 @@ const Footer = () =>{
                     </Center>
                     </Box>
                     <nav className="menu-footer">
-                        <Link href="#arriva" p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link>
-                        <Link href="#arriva" p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link>
-                        <Link href="#arriva" p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>RESUME</Link>
-                        <Link href="#about-me" p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>SOBRE MI</Link>
+                    <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link></ScrollLink>
+                    <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link></ScrollLink>
+                        <Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>RESUME</Link>
+                        <ScrollLink to='aboutme' smooth={true} offset={-150} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>SOBRE MI</Link></ScrollLink>
                     </nav>
 
                         <Flex alignItems='center'>

@@ -2,7 +2,7 @@ import React from 'react';
 import './NavBar.css'
 import { Box, ButtonGroup, Center, Flex, Spacer, Image, Text, Link, Icon } from '@chakra-ui/react'
 import logosinfondo from '../../assets/logosinfondo.png'
-import { px } from 'framer-motion';
+import { Link as ScrollLink } from "react-scroll"
 const NavBar = () =>{
     return(
     <Box as='header' w='100%' h='140px' pt='10px'>
@@ -16,7 +16,7 @@ const NavBar = () =>{
                     <ButtonGroup gap={10} >
                         <Link href="" color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link>
                         <Link href="" color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link>
-                        <Link href="#about-me" color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>RESUME</Link>
+                       <ScrollLink to='aboutme' smooth={true} offset={-100} duration={900} ><Link href="#about-me" color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>RESUME</Link></ScrollLink> 
                     </ButtonGroup>
                 </Center>
                 <Box as='div' className="boton-desplegable">

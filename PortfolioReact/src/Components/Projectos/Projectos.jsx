@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Projectos.css'
 import {Box, Center, Flex, Text, Link, Image, Button, Alert, AlertIcon} from '@chakra-ui/react'
 import contrato from '../../assets/contrato.png'
+import {Element} from 'react-scroll'
 const Projectos = () =>{
 
     let [mostrar, SetMostrar]=useState(false)
@@ -11,6 +12,7 @@ const Projectos = () =>{
     }
 
     return(
+        <Element name='proyectos'>
         <Box  id="proyectos" className="contenedor-proyectos" mt='240px' fontFamily='Arial'>
                <Center>      
                 <Text as='h2' 
@@ -68,6 +70,7 @@ const Projectos = () =>{
                       
                 </Flex>
         </Box>  
+        </Element>
     )
 }
 

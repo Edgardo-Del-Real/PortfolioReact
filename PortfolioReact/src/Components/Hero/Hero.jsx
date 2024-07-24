@@ -2,6 +2,8 @@ import React from 'react';
 import './Hero.css'
 import { Box, Button, ButtonGroup, Center, Flex, Spacer, Text, Image, Link, Icon } from '@chakra-ui/react'
 import foto_mia from '../../assets/foto_mia.png'
+import { Link as ScrollLink } from "react-scroll"
+import {Element} from 'react-scroll';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
 
@@ -9,9 +11,10 @@ const Hero = () =>{
 
 
     return(
+    <Element name='hero'>
     <Box as='section' className="contenedor-hero" fontWeight='bold' pl={30} pr={30} fontFamily='Arial'>
-
         <Flex w='100%' className="contenedor-foto-texto" mt={20}>
+            
             <Center className="hi" 
             pt='20px' 
             flexWrap='wrap'>
@@ -32,6 +35,7 @@ const Hero = () =>{
                 </Text>
             </Center>
             
+            
             <Spacer/>
 
             <Center className="imagen-mia" mr={20}>
@@ -43,31 +47,39 @@ const Hero = () =>{
                 borderRadius='20px 20px'/>
             </Center>
         </Flex>
-        <ButtonGroup gap={15} 
+        <ButtonGroup 
         className="contenedor-botones" 
         w='450px' 
         height='90px' 
         transform='translateY(-90px)'>
 
-            <Button  textAlign='center' 
-            border='4px solid' 
-            width='50%'
-            borderRadius='25px' 
-            p='40px'
-            fontSize='25px'
-            fontWeight='bold'
-            color='#282a36' 
-            background='#bd93f9' 
-            transition='1s'
-            cursor='pointer' 
-            _hover={{color:'#bd93f9', bg:'#282a36'}}>
-            Mis trabajos
-            </Button>
+           <ScrollLink to="proyectos" 
+                smooth={true} 
+                duration={900}>
+                <Button  textAlign='center' 
+                    border='4px solid' 
+                    w='80%'
+                    borderRadius='25px' 
+                    p='40px'
+                    fontSize='25px'
+                    fontWeight='bold'
+                    color='#282a36' 
+                    background='#bd93f9' 
+                    transition='1s'
+                    cursor='pointer' 
+                    _hover={{color:'#bd93f9', bg:'#282a36'}}>
+                    Mis trabajos
+                    </Button>
+            </ScrollLink>
 
 
+            <ScrollLink to="formulario" 
+                smooth={true} 
+                duration={900}
+                offset={400}>
             <Button textAlign='center' 
             border='4px solid' 
-            width='50%' 
+            width='80%' 
             borderRadius='25px' 
             p='40px' 
             fontSize='25px' 
@@ -79,6 +91,7 @@ const Hero = () =>{
             _hover={{color:'#bd93f9', bg:'#282a36'}}>
             Contratarme
             </Button>
+            </ScrollLink>
         </ButtonGroup>
 
         <ButtonGroup className="contenedor-linea-redes" fontSize='50px' transform='translate(-457px, 100px)'>
@@ -138,6 +151,7 @@ const Hero = () =>{
             </Flex>
         </ButtonGroup>
     </Box>
+    </Element>
     )
 }
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import './Formulario.css'
 import { Box, Button, ButtonGroup, Center, Flex, Input, Spacer, Text, Textarea } from '@chakra-ui/react'
+import { Element } from 'react-scroll';
 const Formulario = () =>{
     return(
+    <Element name='formulario'>
     <Box as='form' id="formulario" className="contenedor-formulario" fontFamily='Arial' p='30px'>
         <Flex justifyContent='center' flexWrap='wrap'>
             <Text as='h2' className="titulo" w='100%' textAlign='center' fontSize='40px' mb='100px' mt='250px' color='#f7f6fb'><span className="signos">&lt;</span>Contactos<span className="signos">&gt;</span></Text>
@@ -59,6 +61,7 @@ const Formulario = () =>{
                 </Box>
         </Flex>
     </Box>
+    </Element>
     )
 }
 
