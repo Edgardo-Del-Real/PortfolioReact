@@ -59,42 +59,44 @@ const Formulario = () =>{
             </Text>
                 <Box as='section' 
                 className="formulario" 
-                p='20px' 
+                p={{base:'0px',lg:'20px'}} 
+                pt={{base:'20px'}} 
+                pb={{base:'20px'}} 
                 w='100%' 
                 borderRadius='25px' 
                 boxShadow='1px 1px 15px rgba(0.5, 0.5, 0.5, 0.5)' 
-                bg='#34394c' >
-                    <Flex justifyContent='space-evenly' 
+                bg='#34394c'>
+                    <Flex justifyContent={{base:'space-between',lg:'space-evenly'}} 
                     alignItems='center' 
                     flexWrap='wrap'>
                         <Box as='section' 
                         className="contenedor-info" 
-                        mb='250px' 
+                        mb={{base:'0px',lg:'250px' }}
                         w='50%'>
                             <Flex alignItems='center' 
                             justifyContent='space-around'>
                                 <Box as='div' 
                                 className="info" 
-                                w='30%' 
+                                w={{base:'50%',lg:'50%'}} 
                                 fontFamily='Arial' 
                                 p='10px' 
                                 pr='50px' 
                                 color='#f7f6fb'>
-                                    <Text as='h3' p='10px' fontSize='25px' mb='40px'>Telefono</Text>
-                                    <Text as='h3' p='10px' fontSize='25px' mb='40px'>Direccion</Text>
-                                    <Text as='h3' p='10px' fontSize='25px' mb='40px'>Email</Text>
+                                    <Text as='h3' p={{base:'5px',lg:'10px'}} fontSize={{base:'15px',lg:'25px'}} mb='40px'>Telefono</Text>
+                                    <Text as='h3' p={{base:'5px',lg:'10px'}} fontSize={{base:'15px',lg:'25px'}} mb='40px'>Direccion</Text>
+                                    <Text as='h3' p={{base:'5px',lg:'10px'}} fontSize={{base:'15px',lg:'25px'}} mb='40px'>Email</Text>
                                 </Box>    
                                 <Box as='div' 
                                 className="info-detallada" 
-                                w='70%' 
+                                w={{base:'80%',lg:'70%'}} 
                                 fontFamily='Arial' 
                                 p='10px' 
                                 pr='50px' 
                                 color='#c094f9' 
                                 textAlign='right'>
-                                    <Text as='h3' p='10px' fontSize='25px' mb='40px'>+54 3447491803</Text>
-                                    <Text as='h3' p='10px' fontSize='25px' mb='40px'>Colon Entre Ríos, Argentina</Text>
-                                    <Text as='h3' p='10px' fontSize='25px' mb='40px'>edgardodelreal@gmail.com</Text>
+                                    <Text as='h3' p={{base:'0px',lg:'10px'}} fontSize={{base:'15px',lg:'25px'}} mb={{base:'35px',lg:'40px'}}>+54 3447491803</Text>
+                                    <Text as='h3' p={{base:'0px',lg:'10px'}} fontSize={{base:'15px',lg:'25px'}} mb={{base:'35px',lg:'40px'}}>Colon Entre Ríos, Argentina</Text>
+                                    <Text as='h3' p={{base:'0px',lg:'10px'}} fontSize={{base:'15px',lg:'25px'}} mb={{base:'35px',lg:'40px'}}>edgardodelreal@gmail.com</Text>
                                 </Box>
                             </Flex>
                         </Box>
@@ -115,9 +117,9 @@ const Formulario = () =>{
                                         name="apynom" 
                                         id="apynom" 
                                         w='90%' 
-                                        fontSize='25px' 
+                                        fontSize={{base:'15px',lg:'25px'}} 
                                         mb='20px' 
-                                        p='35px' 
+                                        p={{base:'25px',lg:'35px'}} 
                                         borderRadius='25px' 
                                         bg='#34394c' 
                                         textDecoration='none' 
@@ -137,9 +139,9 @@ const Formulario = () =>{
                                         name="email" 
                                         id="email" 
                                         w='90%' 
-                                        fontSize='25px' 
-                                        mb='20px'
-                                        p='35px' 
+                                        fontSize={{base:'15px',lg:'25px'}} 
+                                        mb='20px' 
+                                        p={{base:'25px',lg:'35px'}} 
                                         borderRadius='25px' 
                                         bg='#34394c' 
                                         _placeholder={{color:'#6473a3', fontWeight:'bolder', textAlign:'initial'}} color='#6473a3' 
@@ -160,25 +162,25 @@ const Formulario = () =>{
                                         border='4px #6473a3 solid' 
                                         _placeholder={{fontSize:'25px', color:'#6473a3', fontWeight:'bolder'}} 
                                         p='25px' 
-                                        fontSize='25px' 
+                                        fontSize={{base:'15px',lg:'25px'}} 
                                         bg='#34394c' 
                                         borderRadius='25px' 
-                                        maxH='200px' 
+                                        maxH={{base:'100px',lg:'200px'}} 
                                         maxW='90%' 
                                         minW='90%' 
-                                        minH='200px'
+                                        minH={{base:'100px',lg:'200px'}}
                                         value={values.parrafo}
                                         onChange={handleChange}>
                                         </Textarea>
 
                                         <Flex justifyContent='right' 
-                                        mt='80px' 
-                                        mr='40px'>
+                                        mt={{base:'20px',lg:'80px'}} 
+                                        mr={{base:'15px',lg:'40px'}}>
                                         <Button 
                                             border='4px solid' 
-                                            borderRadius='25px' 
-                                            p='40px' 
-                                            fontSize='25px' 
+                                            borderRadius={{base:'25px',lg:'25px'}} 
+                                            p={{base:'30px',lg:'40px'}}
+                                            fontSize={{base:'20px',lg:'25px'}} 
                                             fontWeight='bold' 
                                             color='#282a36' 
                                             background='#bd93f9' 

@@ -15,25 +15,25 @@ const Footer = () =>{
                     <Flex alignItems='center' justifyContent='space-between'>
                     <Box as='div' className="logo-nombre-footer">
                     <Center>
-                        <Image className='logo' src={logosinfondo} alt="" cursor='pointer' h='100px' w='100px'/>
-                        <Text as='h2' cursor='pointer' color='#f7f6fb' fontWeight='lighter' fontSize='25px'><Text as='span' className="letraE" color='#bd93f9' fontSize='40px' fontWeight='lighter'>E</Text>DGARDO</Text>
+                        <Image className='logo' src={logosinfondo} alt="" cursor='pointer' h={{base:'60px',lg:'100px'}} w={{base:'60px',lg:'100px'}}/>
+                        <Text display={{ base: 'none', md: 'block' }} as='h2' cursor='pointer' color='#f7f6fb' fontWeight='lighter' fontSize={{base:'20px',lg:'25px'}}><Text as='span' className="letraE" color='#bd93f9' fontSize={{base:'30px',lg:'40px'}} fontWeight='lighter'>E</Text>DGARDO</Text>
                     </Center>
                     </Box>
                     <nav className="menu-footer">
-                    <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link></ScrollLink>
-                    <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link></ScrollLink>
-                    <ScrollLink to='proyectos' smooth={true} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PROYECTOS</Link></ScrollLink>
-                        <ScrollLink to='aboutme' smooth={true} offset={-150} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>SOBRE MI</Link></ScrollLink>
+                    <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize={{base:'15px',sm:'11px',lg:'20px'}} transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link></ScrollLink>
+                    <ScrollLink to='hero' smooth={true} offset={-400} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize={{base:'15px',sm:'11px',lg:'20px'}} transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link></ScrollLink>
+                    <ScrollLink to='proyectos' smooth={true} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize={{base:'15px',sm:'11px',lg:'20px'}} transition='1s' _hover={{color:'#bd93f9'}}>PROYECTOS</Link></ScrollLink>
+                        <ScrollLink to='aboutme' smooth={true} offset={-150} duration={900}><Link p='15px' textDecoration='none' color='#f7f6fb' fontSize={{base:'15px',sm:'11px',lg:'20px'}} transition='1s' _hover={{color:'#bd93f9'}}>SOBRE MI</Link></ScrollLink>
                     </nav>
 
-                        <Flex alignItems='center'>
-                        <Box as='section' className="redes-footer" p='20px' mr='10px' display='flex' color='#6b78a3' fontSize='30px' alignItems='center'>  
+                        <Flex alignItems='center' >
+                        <Box as='section' className="redes-footer" p='20px' mr={{base:'0px',lg:'10px'}} display='flex' color='#6b78a3' fontSize='30px' alignItems='center'>  
                         <Link href="https://www.instagram.com/edgardelreal1/" 
-                    title="Instagram" 
-                    target="_blank">
+                            title="Instagram" 
+                            target="_blank">
                             <Box as='i' 
                                 className="bi bi-instagram" 
-                                fontSize='30px' 
+                                fontSize={{base:'25px',sm:'20px',lg:'30px'}} 
                                 p='10px' 
                                 color='#6b78a3'  
                                 transition='0.5s' 
@@ -46,7 +46,7 @@ const Footer = () =>{
                     target="_blank">
                         <Box as='i' 
                             className="bi bi-linkedin" 
-                            fontSize='30px' 
+                            fontSize={{base:'25px',sm:'20px',lg:'30px'}} 
                             p='10px' 
                             color='#6b78a3' 
                             transition='0.5s'
@@ -59,7 +59,7 @@ const Footer = () =>{
                     target="_blank">
                         <Box as='i' 
                             className="bi bi-github" 
-                            fontSize='30px'
+                            fontSize={{base:'25px',sm:'20px',lg:'30px'}} 
                             p='10px' 
                             color='#6b78a3' 
                             transition='0.5s' 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavBar.css'
-import { Box, ButtonGroup, Center, Flex, Spacer, Image, Text, Link, Icon } from '@chakra-ui/react'
+import { Box, ButtonGroup, Center, Flex, Spacer, Image, Text, Link, Icon, Menu, MenuButton, MenuList, MenuItem, IconButton } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons';
 import logosinfondo from '../../assets/logosinfondo.png'
 import { Link as ScrollLink } from "react-scroll"
 const NavBar = () =>{
@@ -14,14 +15,34 @@ const NavBar = () =>{
                 <Spacer />
                 <Center className='menu' pr={45} >
                     <ButtonGroup gap={10} >
-                        <Link href="" color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link>
-                        <Link href="" color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link>
-                       <ScrollLink to='aboutme' smooth={true} offset={-100} duration={900} ><Link href="#about-me" color='#f7f6fb' fontSize='20px' transition='1s' _hover={{color:'#bd93f9'}}>RESUME</Link></ScrollLink> 
+                        <Link href="" color='#f7f6fb' fontSize='20px' display={{ base: 'none', md: 'block' }} transition='1s' _hover={{color:'#bd93f9'}}>HOME</Link>
+                        <Link href="" color='#f7f6fb' fontSize='20px' display={{ base: 'none', md: 'block' }} transition='1s' _hover={{color:'#bd93f9'}}>PORTFOLIO</Link>
+                       <ScrollLink to='aboutme' smooth={true} offset={-100} duration={900} ><Link href="#about-me" color='#f7f6fb' fontSize='20px' display={{ base: 'none', md: 'block' }} transition='1s' _hover={{color:'#bd93f9'}}>RESUME</Link></ScrollLink> 
                     </ButtonGroup>
                 </Center>
-                <Box as='div' className="boton-desplegable">
-                    <Box as='Icon' className="Li bi-list" display='none'></Box>
-                </Box>
+                <Menu>
+                    <Flex alignItems='center' justifyContent='center' pr='30px'>
+                    <MenuButton
+                        as={IconButton}
+                        aria-label='Options'
+                        icon={<HamburgerIcon />}
+                        variant='outline'
+                        display={{ base: 'block', md: 'none' }}
+                        bg='#bd93f9'
+                    />
+                    <MenuList bg='#bd93f9'>
+                        <MenuItem bg='#bd93f9'>
+                        Home
+                        </MenuItem >
+                        <MenuItem bg='#bd93f9'>
+                        Porfolio
+                        </MenuItem>
+                        <MenuItem bg='#bd93f9'>
+                        Resume
+                        </MenuItem>
+                    </MenuList>
+                </Flex>                
+                </Menu>
             </Flex>
     </Box>
     )

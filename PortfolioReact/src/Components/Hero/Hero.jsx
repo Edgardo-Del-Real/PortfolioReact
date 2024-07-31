@@ -17,10 +17,10 @@ const Hero = () =>{
             
             <Center className="hi" 
             pt='20px' 
-            flexWrap='wrap'>
+            flexWrap={{base:'wrap',lg:'wrap'}}>
                 <Text as='h1' 
                 color='#f7f6fb' 
-                fontSize='3rem' 
+                fontSize={{base:'2.5rem',lg:'3rem'}} 
                 w='100%'>Hola,<br/>Soy Edgardo,<br/>
                     <Text as='span' 
                         color='#ff79c6'>
@@ -29,8 +29,8 @@ const Hero = () =>{
                 </Text>
                 <Text as='p' className='textoDeAbajo' 
                     color='#5b6379' 
-                    fontSize='1rem' 
-                    transform={'translate(-205px, -80px)'}>
+                    fontSize={{base:'1rem',lg:'1rem'}} 
+                    transform={{base:'translate(-173px, -10px)',lg:'translate(-205px, -80px)'}}>
                     Front End Developer / C# / Java / React
                 </Text>
             </Center>
@@ -38,7 +38,7 @@ const Hero = () =>{
             
             <Spacer/>
 
-            <Center className="imagen-mia" mr={20}>
+            <Center className="imagen-mia" mr={20} display={{ base: 'none', lg: 'block' }}>
                 <Image width={400} 
                 height={400}  
                 src={foto_mia} 
@@ -51,17 +51,16 @@ const Hero = () =>{
         className="contenedor-botones" 
         w='450px' 
         height='90px' 
-        transform='translateY(-90px)'>
-
+        transform={{base:'translateY(-40px)',lg:'translateY(-90px)'}}>
            <ScrollLink to="proyectos" 
                 smooth={true} 
                 duration={900}>
                 <Button  textAlign='center' 
                     border='4px solid' 
                     w='80%'
-                    borderRadius='25px' 
-                    p='40px'
-                    fontSize='25px'
+                    borderRadius={{base:'25px',lg:'25px'}} 
+                    p={{base:'30px',lg:'40px'}}
+                    fontSize={{base:'20px',lg:'25px'}}
                     fontWeight='bold'
                     color='#282a36' 
                     background='#bd93f9' 
@@ -80,9 +79,9 @@ const Hero = () =>{
             <Button textAlign='center' 
             border='4px solid' 
             width='80%' 
-            borderRadius='25px' 
-            p='40px' 
-            fontSize='25px' 
+            borderRadius={{base:'25px',lg:'25px'}} 
+            p={{base:'30px',lg:'40px'}}
+            fontSize={{base:'20px',lg:'25px'}}
             fontWeight='bold' 
             color='#282a36' 
             background='#bd93f9' 
